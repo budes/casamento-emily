@@ -1,0 +1,41 @@
+
+/* ===== BARRA DE NAVEGAÇÃO ===== */
+header {
+    position: fixed;
+
+    background-color: rgb(197, 182, 207);
+
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+header button {
+    background-color: rgba(0, 0, 0, 0);
+
+    color: rgb(228, 228, 228);
+    font-size: 1.25rem;
+    font-weight: 1000;
+
+    width: 20%;
+    height: 70%;
+
+    cursor: pointer;
+
+    border-radius: 0.25rem;
+
+    transition: background-color 0.25s, color 0.25s
+}
+
+header button:hover {
+    background-color: rgb(228, 228, 228);
+    color: rgb(197, 182, 207)
+}
+
+/* ============================== */

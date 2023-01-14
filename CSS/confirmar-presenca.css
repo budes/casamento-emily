@@ -1,0 +1,110 @@
+#confirmar-presenca {
+    width: 100vw;
+    height: 95vh;
+
+    padding-top: 4rem;
+
+    background-color: rgb(114, 157, 248);
+}
+
+#area-confirmacao {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40rem;
+    height: 35rem;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.area-input {
+    display: flex;
+    flex-direction:row;
+
+    justify-content: space-evenly;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: AnticDidone;
+    font-size: 2rem;
+    color: rgb(240, 240, 240);
+
+    width: 80%;
+
+    margin-top: 2rem;
+}
+
+.area-input input {
+    background-color: rgba(0, 0, 0, 0);
+    width: 70%;
+    
+    border-bottom: 0.15rem solid white;
+    border-radius: 0.2rem;
+
+    transition: background-color 0.2s;
+
+    font-family: inherit;
+    font-size: inherit
+}
+
+.area-input input:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.area-input input:focus {
+    outline: none
+}
+
+.msg-tempo {
+    width: fit-content;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: AnticDidone;
+    font-size: 2rem;
+    color: rgb(240, 240, 240);
+
+}
+
+#mensagem {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem
+}
+
+#countdown {
+    margin-bottom: 3rem;
+
+    padding: 0.5rem;
+    border: 0.15rem solid rgb(230, 230, 230);
+    border-radius: 1rem;
+}
+
+#botao-confirmacao {
+    width: fit-content;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: AnticDidone;
+    font-size: 2rem;
+    color: rgb(114, 157, 248);
+
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+
+    transition: all 0.25s;
+}
+#botao-confirmacao:hover {
+    padding: 1.15rem;
+
+}

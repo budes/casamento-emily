@@ -1,0 +1,22 @@
+/* Fontes */
+
+@font-face {
+    font-family: AnticDidone;
+    src: url("../Fontes/Antic_Didone/AnticDidone-Regular.ttf")
+}
+@font-face {
+    font-family: CardoRegular;
+    src: url("../Fontes/Cardo/Cardo-Regular.ttf")
+}
+@font-face {
+    font-family: Forum;
+    src: url("../Fontes/Forum/Forum-Regular.ttf");
+}
+@font-face {
+    font-family: Quicksand;
+    src: url("../Fontes/Quicksand/Quicksand-VariableFont_wght.ttf")
+}
+@font-face {
+    font-family: Virtual;
+    src: url("../Fontes/Virtual/virtual-regular.ttf")
+}
