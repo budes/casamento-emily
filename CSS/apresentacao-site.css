@@ -1,36 +1,56 @@
+* {
+    user-select: none;
+}
 
 #apresentacao-site {
     display: grid;
     
     height: 95vh;
 
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
+    padding-top: 4rem;
     border-bottom: 0.15rem dashed rgb(100, 100, 100);
 
-    background-color: rgb(197, 182, 207)
+    background-color: rgb(165,170,236)
 }
 
 #data {
+    position: absolute;
+    left: 1rem;
+    top: 87.5vh;
+
     text-align: center;
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 
     margin-top: 1rem;
 
-    color: rgb(240, 240, 240)
+    color: rgb(240, 240, 240);
+    box-shadow: 0rem 0.2rem rgb(255, 255, 255);
+
+    transition: font-size 0.5s
+}
+
+#data:hover {
+    font-size: 2.7rem;
 }
 
 #nomes {
-    font-family: Cardio;
+    font-family: Virtual;
     user-select: none;
 
     position: absolute;
     text-align: center;
 
-    font-size: 8.75rem;
+    font-size: 17.5rem;
     font-style: normal;
-    font-weight: 1000;
+    font-weight: 500;
+    text-shadow: 
+    1px 0px 0px rgb(100, 100, 100),
+    -1px 0px 0px rgb(100, 100, 100),
+    0px 1px 0px rgb(100, 100, 100),
+    0px -1px 0px rgb(100, 100, 100);  
     
     left: 50%;
     top: 50%;
@@ -39,7 +59,7 @@
     color: rgb(228, 228, 228);
     background-color: rgba(0, 0, 0, 0);
 
-    transition: color 1s
+    transition: color 1s, text-shadow 1s;
 }
 
 /* Slider de imagens */
@@ -114,4 +134,40 @@
     top: 50%;
     left: 50%;
     transform: translate(-150%, -50%)
+}
+
+@media only screen and (max-width: 768px) {
+    #apresentacao-site {
+        height: 105vh
+    }
+
+    #nomes {
+        font-size: 500%;
+    }
+
+    #data {
+        left: 50%;
+        top: 100%;
+        
+        transform: translateX(-50%);
+
+        white-space: nowrap;
+        
+    }
+    
+    .carousel-slider{
+        min-width: 17rem;
+        max-width: 70%;
+        min-height: 30rem;
+    }
+
+    .botao-img {
+        width: 50%
+    }
+    .bt-prox-img-casal {
+        transform: translate(-10%, -50%)
+    }
+    .bt-ant-img-casal {
+        transform: translate(-90%, -50%)
+    }
 }

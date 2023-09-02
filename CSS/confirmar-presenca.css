@@ -1,21 +1,26 @@
 #confirmar-presenca {
     width: 100vw;
-    height: 95vh;
+    height: fit-content;
 
     padding-top: 4rem;
+    padding-bottom: 4rem;
 
     background-color: rgb(114, 157, 248);
+
+    overflow-y: hidden;
 }
 
 #area-confirmacao {
     position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 
     width: 40rem;
-    height: 35rem;
+    height: 42rem;
     
+    border: 0.5rem double white;
+    border-radius: 0.5rem;
+
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -58,6 +63,27 @@
 
 .area-input input:focus {
     outline: none
+}
+
+.area-input select {
+    width: 20rem;
+    height: 4rem;
+
+    border-radius: 0.25rem;
+    
+    text-align: center;
+
+    font-size: 2rem;
+    font-family: inherit;
+    color: rgb(114, 157, 248)
+}
+
+.area-input select:focus {
+    outline: none
+}
+
+#presente {
+    line-height: 4rem;
 }
 
 .msg-tempo {
@@ -107,4 +133,30 @@
 #botao-confirmacao:hover {
     padding: 1.15rem;
 
+}
+
+@media only screen and (max-width: 768px) {
+    #area-confirmacao {
+        width: 90%;
+        height: fit-content;
+        
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+
+        overflow-y: hidden;
+    }
+
+    .area-input {
+        width: 95%
+    }
+
+    #mensagem {
+        text-align: center;
+    }
+
+    #botao-confirmacao {
+        padding: 2.5%;
+        padding-top: 5%;
+        padding-bottom: 5%
+    }
 }

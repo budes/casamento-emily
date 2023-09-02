@@ -1,12 +1,13 @@
 #lista-presentes {
     width: 100vw;
-    height: 95vh;
+    height: fit-content;
 
     padding-top: 4rem;
     padding-bottom: 4rem;
     border-bottom: 0.15rem dashed rgb(100, 100, 100);
 
-    background-color: rgb(197, 182, 207)
+    background-color: rgb(165,170,236);
+    overflow-y: hidden
 }
 
 #lista {
@@ -18,8 +19,7 @@
 
     position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
     background-color: rgb(246, 229, 141);
     border-radius: 1rem;

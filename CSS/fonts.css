@@ -20,3 +20,8 @@
     font-family: Virtual;
     src: url("../Fontes/Virtual/virtual-regular.ttf")
 }
+
+@font-face {
+    font-family: BetterSaturday;
+    src: url("../Fontes/better_saturday/Better\ Saturday.otf")
+}

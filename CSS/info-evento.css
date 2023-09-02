@@ -31,6 +31,14 @@ h1 {
 
 #localizacao {
     position: relative;
+
+    padding: 1rem;
+    border-radius: 1rem;
+
+    margin-bottom: 1.5rem;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 /* ======================= */
@@ -65,11 +73,13 @@ h1 {
     left: 50%;
     transform: translateX(-100%);
 
-    height: 25rem;
-    width: 40rem;
+    height: 26.5rem;
+    width: 50%;
 
-    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
+
 #img-local slide {
     position: relative;
     top: 200%;
@@ -78,11 +88,66 @@ h1 {
 .bt-prox-img-local {
     top: 50%;
     left: 50%;
-    transform: translate(230%, -50%)
+    transform: translate(-40%, -50%)
 }
 
 .bt-ant-img-local {
     top: 50%;
     left: 50%;
     transform: translate(-40%, -50%)
+}
+
+@media only screen and (max-width: 768px) {
+    #info-evento {
+        height: auto
+    }
+
+    #localizacao {
+        padding: 0.25rem;
+        width: 19rem;
+
+        margin-bottom: 2rem;
+    }
+
+    /* =-=-=-=-=-=-=-= */
+    #elementos {
+        flex-direction: column;
+        justify-content: space-between;
+
+        align-items: center;
+
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    #mapa {
+        position: relative;
+
+        min-width: 17rem;
+        max-width: 70%;
+        min-height: 30rem;
+        
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #info {
+        text-align: center;
+    }
+    #img-local {
+        position: relative;
+        left: 0%;
+        transform: translateX(0);
+
+        width: 17rem;
+        height: 17rem;
+        object-fit: cover;
+
+        border-radius: 100%;
+        border-width: 0.5rem;
+        border-color: black;
+        border-style: double;
+
+    }
+
 }
