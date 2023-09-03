@@ -25,3 +25,8 @@
     font-family: BetterSaturday;
     src: url("../Fontes/better_saturday/Better\ Saturday.otf")
 }
+
+@font-face {
+    font-family: PatrickRegular;
+    src: url("../Fontes/patrick-hand.regular.ttf")
+}
